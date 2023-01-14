@@ -8,7 +8,7 @@ class DataManager:
     def __init__(self):
         self.destination_data = {}
 
-    # Guarda como destination_data a una lista de dict con todo lo que hay en el excel
+    # Save as destination_data a list of dictionaries with the data contained in the excel
     def get_destination_data(self):
         response = requests.get(SHEETY_ENDPOINT)
         data = response.json()
